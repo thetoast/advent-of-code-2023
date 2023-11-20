@@ -1,0 +1,13 @@
+{
+  "name": "advent-of-code-2023",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "purescript-language-server": "^0.17.3",
+    "purs-tidy": "^0.10.0"
+  },
+  "dependencies": {
+    "purescript": "^0.15.12"
+  }
+}
