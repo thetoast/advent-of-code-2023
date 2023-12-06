@@ -297,3 +297,11 @@ getLine :: forall a. Grid a -> Point -> Direction -> Maybe (Array a)
 getLine grid p direction = do
   points <- pointRange grid p direction
   traverse (\point -> gridValueAt point grid) points
+
+-- | Gets a row from the grid using a point in that row
+getRow' :: forall a. Grid a -> Point -> Maybe (Array a)
+getRow' grid (Point { y }) = getRow grid y
+
+-- | Gets a row from the grid using the row's y coord
+getRow :: forall a. Grid a -> Int -> Maybe (Array a)
+getRow (Grid rows) y = rows !! y
